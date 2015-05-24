@@ -1,0 +1,28 @@
+{
+  "name": "milight-edison",
+  "version": "0.0.0",
+  "description": "edison controller for milight",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:samhiatt/milight-edison.git"
+  },
+  "keywords": [
+    "milight",
+    "edison"
+  ],
+  "author": "Sam Hiatt <samhiatt@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samhiatt/milight-edison/issues"
+  },
+  "homepage": "https://github.com/samhiatt/milight-edison",
+  "dependencies": {
+    "edison-io": "^0.8.14",
+    "galileo-io": "^0.8.14",
+    "johnny-five": "^0.8.76"
+  }
+}
