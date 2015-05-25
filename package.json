@@ -23,6 +23,7 @@
   "dependencies": {
     "edison-io": "^0.8.14",
     "galileo-io": "^0.8.14",
-    "johnny-five": "^0.8.76"
+    "johnny-five": "^0.8.76",
+    "node-milight-scheduler":"samhiatt/node-milight-scheduler.git"
   }
 }
