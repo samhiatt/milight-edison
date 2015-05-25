@@ -21,9 +21,11 @@
   },
   "homepage": "https://github.com/samhiatt/milight-edison",
   "dependencies": {
+    "cron": "^1.0.9",
     "edison-io": "^0.8.14",
     "galileo-io": "^0.8.14",
     "johnny-five": "^0.8.76",
-    "node-milight-scheduler":"samhiatt/node-milight-scheduler.git"
+    "node-milight-scheduler": "samhiatt/node-milight-scheduler.git",
+    "suncalc": "^1.6.0"
   }
 }
