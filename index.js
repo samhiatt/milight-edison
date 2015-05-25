@@ -102,5 +102,13 @@ board.on("ready", function() {
 	button.on('press',function(){
 		setSunPosition(position);
 	});
-	scheduleEvent();
+
+	var times = getTimes();
+	var now = new Date();
+	var lastEvent = times.filter(function(t){
+			return t.time<now;
+	}).slice(-1)[0];
+	var now = new Date();
+	lastEvent.time = new Date(new Date(now).setSeconds(now.getSeconds()+1));
+	scheduleEvent(lastEvent);
 });
