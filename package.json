@@ -23,7 +23,7 @@
   "dependencies": {
     "cron": "^1.0.9",
     "edison-io": "^0.8.14",
-    "galileo-io": "^0.8.14",
+    "galileo-io": "samhiatt/galileo-io",
     "johnny-five": "^0.8.76",
     "node-milight-scheduler": "samhiatt/node-milight-scheduler.git",
     "suncalc": "^1.6.0"

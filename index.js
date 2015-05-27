@@ -69,7 +69,7 @@ function scheduleEvent(event){
 
 var setSunPosition = function(pos){
 	console.log("Position set to",pos);
-	var func = events[pos]();
+	var func = events[pos];
 	if (typeof func == 'function') func();
 	lcd.cursor(0,0).print("now:"+pos+"            ");
 };
@@ -91,7 +91,7 @@ board.on("ready", function() {
 		var relValue = Math.floor((dial.value/1024)*positions.length);
 		return positions[relValue];
 	};
-	lcd.bgColor(50,150,100);
+	lcd.bgColor(5,10,10);
 	var dial = new five.Sensor("A0");
 	dial.on("data", function() {
 		var oldPos = position;
