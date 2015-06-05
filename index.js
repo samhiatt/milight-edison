@@ -8,7 +8,7 @@ var CronJob = require('cron').CronJob;
 var location = {lat: 37.7833, lon:-122.4167}; // San Francisco
 
 function getTimes(time){
-	if (!time) time = new Date();
+	if (typeof time == 'undefined') time = new Date();
 	// get today's sunlight times for location
 	var times = SunCalc.getTimes(time, location.lat, location.lon);
 	/*
